@@ -1,0 +1,47 @@
+
+/* Contact */
+
+.Contact{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 450vh;
+    transform: translateX(-50%);
+    color: #e6e6e6;
+  }
+  .Contact h4{
+    display: flex;
+  }
+  .Contact h4 hr{
+    width: 80%;
+    height: 0.1vh;
+    background-color: #e6e6e6;
+  }
+  .Contact .detail{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Contact p{
+    width: 50%;
+    font-size: small;
+  }
+  
+  
+  .Contact img{
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    right: 30%;
+    box-shadow: 0 0 1vh #278C7A;
+    transition: 0.4s;
+  }
+  .Contact img:hover{
+    box-shadow: 0 0 1vh #278C7A;
+  }
+  
+  .skill{
+    display: flex;
+  }

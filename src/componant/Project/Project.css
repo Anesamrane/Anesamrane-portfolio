@@ -1,0 +1,72 @@
+
+/* Project */
+
+.Project{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 380vh;
+    transform: translateX(-50%);
+    color: #e6e6e6;
+  }
+  .Project h4{
+    display: flex;
+  }
+  .Project h4 hr{
+    width: 80%;
+    height: 0.1vh;
+    background-color: #e6e6e6;
+  }
+  .Project .detail{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Project p{
+    width: 50%;
+    font-size: small;
+  }
+  .Project p a{
+    color: #278C7A;
+  }
+  
+  
+  .Project img{
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    right: 30%;
+    box-shadow: 0 0 1vh #278C7A;
+    transition: 0.4s;
+  }
+  .Project img:hover{
+    box-shadow: 0 0 1vh #278C7A;
+  }
+  .Project .list button{
+    background: none;
+    height: 5vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 1vh;
+    text-decoration: none;
+    color: #e6e6e6;
+    transition: 0.2s;
+    border-left: 1vh solid #e6e6e6;
+    border-left-width: 1vh;
+  }
+  .Project #four{
+    background-color: #278C7A;
+    color: #e6e6e6;
+    border-left: 5vh solid #278C7A;
+  }
+  .Project .list button:hover{
+    color: #278C7A;
+    border-left: 5vh solid #278C7A;
+  }
+  
+  .Project .skill{
+    display: flex;
+  }

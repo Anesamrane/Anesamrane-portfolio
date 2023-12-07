@@ -1,0 +1,46 @@
+
+
+
+.navwall{
+    width: 90%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: #e6e6e6;
+    margin: 2vh;
+    cursor: pointer;
+    padding: 2vh;
+  }
+  .navbar a:hover{
+    border-bottom: #e6e6e6 solid 0.5vh;
+  }
+  .navwall button{
+    background: none;
+    border: 0.2vh solid #278C7A;
+    outline: none;
+    width: 7%;
+    height: 8vh;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .navwall button a{
+    text-decoration: none;
+    color: #e6e6e6;
+    padding: 1.7vh;
+  }
+  .navwall button:hover{
+    background-color:#278C7A;
+  }

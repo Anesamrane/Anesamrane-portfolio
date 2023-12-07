@@ -1,0 +1,47 @@
+
+/* about */
+
+.about{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 120vh;
+    transform: translateX(-50%);
+    color: #e6e6e6;
+  }
+  .about h4{
+    display: flex;
+  }
+  .about h4 hr{
+    width: 80%;
+    height: 0.1vh;
+    background-color: #e6e6e6;
+  }
+  .about .detail{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about p{
+    width: 50%;
+    font-size: small;
+  }
+  
+  
+  .about img{
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    right: 30%;
+    box-shadow: 0 0 1vh #278C7A;
+    transition: 0.4s;
+  }
+  .about img:hover{
+    box-shadow: 0 0 1vh #278C7A;
+  }
+  
+  .skill{
+    display: flex;
+  }
