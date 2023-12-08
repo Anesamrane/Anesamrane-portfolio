@@ -45,3 +45,30 @@
   .skill{
     display: flex;
   }
+
+  @media (max-width: 768px) {
+    .Study{
+      width: 90%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 290vh;
+      transform: translateX(-50%);
+      color: #e6e6e6;
+    }
+    .Study .detail{
+      display: block;
+    }
+    .Study p{
+      width: 100%;
+      font-size: small;
+    }
+    .Study ul{
+      width: 100%;
+      font-size: small;
+    }
+    .skill{
+      display: block;
+      width: 80%;
+    }
+  }
