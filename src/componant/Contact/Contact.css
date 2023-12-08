@@ -45,3 +45,23 @@
   .skill{
     display: flex;
   }
+
+
+  @media (max-width: 768px) {
+    .Contact{
+      width: 90%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 500vh;
+      transform: translateX(-50%);
+      color: #e6e6e6;
+    }
+    .Contact .detail{
+      display: block;
+    }
+    .Contact p{
+      width: 100%;
+      font-size: small;
+    }
+  }
