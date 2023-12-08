@@ -45,3 +45,34 @@
   .skill{
     display: flex;
   }
+
+
+
+  @media (max-width: 768px) {
+    .about{
+      width: 90%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 120vh;
+      transform: translateX(-50%);
+      color: #e6e6e6;
+    }
+    .about .detail{
+      display: block;
+    }
+    .about img{
+      width: 30vh;
+      height: 30vh;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+      right: 0vh;
+      box-shadow: 0 0 1vh #278C7A;
+      transition: 0.4s;
+    }
+    .about p{
+      width: 100%;
+      font-size: small;
+    }
+  }
