@@ -70,3 +70,23 @@
   .Project .skill{
     display: flex;
   }
+
+  
+  @media (max-width: 768px) {
+    .Project{
+      width: 90%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 430vh;
+      transform: translateX(-50%);
+      color: #e6e6e6;
+    }
+    .Project .detail{
+      display: block;
+    }
+    .Project p{
+      width: 100%;
+      font-size: small;
+    }
+  }
