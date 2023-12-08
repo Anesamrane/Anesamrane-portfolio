@@ -4,15 +4,16 @@
 .navwall{
     width: 90%;
     display: flex;
+    justify-content: space-between;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .navbar{
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .navbar a{
     text-decoration: none;
@@ -28,7 +29,7 @@
     background: none;
     border: 0.2vh solid #278C7A;
     outline: none;
-    width: 7%;
+    width: 90px;
     height: 8vh;
     margin-top: 2vh;
     border-radius: 1vh;
@@ -44,3 +45,57 @@
   .navwall button:hover{
     background-color:#278C7A;
   }
+
+
+
+  .social{
+    position: fixed;
+    top: 90vh;
+    right: 2%;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .social2{
+    display: none;
+}
+  .social a{
+    color: #e6e6e668;
+    text-decoration: none;
+    font-size: 4vh;
+    padding: 2vh;
+    transition: 0.3s;
+  }
+  .social a:hover{
+    color: #e6e6e6;
+  }
+  
+  
+  /* for phone  */
+  @media (max-width: 768px) {
+    .navbar{
+      display: none;
+    }
+    .social{
+      display: none;
+  }
+  .social2{
+    display: block;
+    position: absolute;
+    top: 512vh;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .social2 a{
+    color: #e6e6e668;
+    text-decoration: none;
+    font-size: 3.5vh;
+    padding: 2vh;
+    transition: 0.3s;
+  }
+  .social2 a:hover{
+    color: #e6e6e6;
+  }
+  
+}
