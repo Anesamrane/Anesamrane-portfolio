@@ -1,95 +1,98 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+/* eslint-disable react/no-unescaped-entities */
+"use client"
 
-export default function Home() {
+import styles from "@/app/page.module.css"
+import About from '@/componant/About/About'
+import Contact from '@/componant/Contact/Contact'
+import Faq from '@/componant/Faq/Faq'
+import Study from '@/componant/Study/Study'
+import Project from '@/componant/Project/Project'
+import Navbar from '@/componant/navbar/Navbar'
+import React from 'react'
+import { useEffect } from "react"
+
+function page() {
+
+
+/*
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutDiv = document.querySelector(`.about`) as HTMLElement | null;
+      const contactDiv = document.querySelector(`.contact`) as HTMLElement | null;
+  
+      if (aboutDiv) {
+        console.log('first')
+        const scrollPosition = window.scrollY;
+        const aboutTransform = scrollPosition >= 250 ? 'translateX(-50%)' : 'translateX(0)';
+        aboutDiv.style.transform = aboutTransform;
+      }
+  
+      if (contactDiv) {
+        console.log('anes');
+        const scrollPosition = window.scrollY;
+        const contactTransform = scrollPosition >= 1300 ? 'translateX(-50%)' : 'scale(1) translateX(0)';
+        contactDiv.style.transform = contactTransform;
+      }
+    };
+  
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+  
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  */
+  
+
+    const scrollTo = () => {
+      window.scrollTo({
+        top: 550,
+        behavior: 'smooth',
+      });
+    };
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div>
+            <Navbar />
+
+      <div className={styles.detail}>
+        <h4>I'm a full stack divelepper </h4>
+        <h1>Let's build amazing things</h1>
+        <p>Passionate Web Developer dedicated to creating stunning 
+          and user-friendly websites. With a keen eye for design and a knack
+           for problem-solving, I transform ideas into interactive and responsive digital experiences. 
+          Let's collaborate to bring your vision to life!</p>
+          <button onClick={scrollTo}>Discover more</button>
+
+          <hr />
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+
+
+
+
+
+      <div className={styles.about}>
+      <About />
+      </div>
+      <div className={styles.contact}>
+      <Contact />
+      </div >
+      <div className={styles.faq}>
+      <Faq />
+      </div>
+      <div className={styles.project}>
+      <Project />
+      </div>
+      <div className={styles.study}>
+      <Study />
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
+
+export default page
