@@ -67,3 +67,23 @@
   .Faq .skill{
     display: flex;
   }
+
+
+  @media (max-width: 768px) {
+    .Faq{
+      width: 90%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 230vh;
+      transform: translateX(-50%);
+      color: #e6e6e6;
+    }
+    .Faq .detail{
+      display: block;
+    }
+    .Faq p{
+      width: 100%;
+      font-size: small;
+    }
+  }
